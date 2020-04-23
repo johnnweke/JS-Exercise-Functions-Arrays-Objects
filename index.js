@@ -111,17 +111,15 @@ return `${Math.round((temp*9/5)+32)}F`;
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(name, id, email) {
+function makePersonObject(id, name, email) {
 // Only return statement needed - Don't overcomplicate things!
-  return `{
-    id: ${id},
-    name: ${name},
-    email: ${email},
-  }`;
+  return {
+    id: id,
+    name: name,
+    email: email,
+  };
   /* code here */
 }
-
-console.log(makePersonObject(5, "Leia", "leia@leialei.com"));
 
 /**
  * ### Challenge `getName`
@@ -136,10 +134,13 @@ console.log(makePersonObject(5, "Leia", "leia@leialei.com"));
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
+function getName(object) {
   /* code here */
+  return `Hello, my name is ${object.name}`;
 }
-
+// //let test = makePersonObject(5, "Leia", "leia@leialei.com");
+// //console.log(test);
+// //console.log(getName(test));
 
 /**
  * ### Challenge `appleIndex`
@@ -156,9 +157,19 @@ function getName(/* code here */) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
+function appleIndex(stringArray) {
   /* code here */
+  // FOR LOOP
+  for (let i = 0; i < stringArray.length; i++){
+    if (stringArray[i] == 'apple'){
+      return i;
+    } else {
+      return `Apple is not in this array.`
+    }
+  }
 }
+// //TEST
+// // console.log(appleIndex([ 'orange', 'grape', 'apple', 'banana', 'mango' ]));
 
 /**
  * ### Challenge `isItAnApple`
