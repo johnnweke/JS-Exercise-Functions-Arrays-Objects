@@ -10,8 +10,10 @@ If you run into trouble while coding, fight the good fight for 20 minutes and th
 
 ##### Index
 
-* [Instructions](#instructions)
-* [Get Started](#get-started)
+- [Objects, Functions and Arrays](#objects-functions-and-arrays)
+        - [Index](#index)
+  - [Instructions](#instructions)
+  - [Get Started](#get-started)
 
 ## Instructions
 
@@ -29,4 +31,4 @@ Find the file `index.js` and complete the tasks until all of your tests pass. Do
 1. Run tests by typing `npm run test:watch`.
 1. Work on your branch, push commits and create PR as usual.
 
-<img alt='instructions screenshot' src='./instructions.png'>
+<img alt='instructions screenshot' src='./innstructions.png'>
