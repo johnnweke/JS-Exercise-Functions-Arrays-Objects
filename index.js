@@ -76,10 +76,24 @@ function temperatureCtoF(celsius) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
+function temperatureInF(temp, unit) {
   /* code here */
+  //If unit = C
+  //Tried to use 'Type of'; didn't work
+
+  if ((unit === 'C') || (unit === 'c')){
+return `${Math.round((temp*9/5)+32)}F`;
+
+  // else if = 
+  } else if ((unit === 'F') || (unit === 'f')){
+  return `${Math.round(temp)}F`;
+    // else 
+  }else {
+  return `One of more of the values you entered is incorrect`;
+  }
 }
 
+// Test line console.log(temperatureInF(88, 'f'));
 
 /**
  * ### Challenge `makePersonObject`
