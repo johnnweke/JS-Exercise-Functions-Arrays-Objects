@@ -1,57 +1,3 @@
-
-const carInventory = [
-  { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
-  { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
-  { id: 3, car_make: "Land Rover", car_model: "Defender Ice Edition", car_year: 2010 },
-  { id: 4, car_make: "Honda", car_model: "Accord", car_year: 1983 },
-  { id: 5, car_make: "Mitsubishi", car_model: "Galant", car_year: 1990 },
-  { id: 6, car_make: "Honda", car_model: "Accord", car_year: 1995 },
-  { id: 7, car_make: "Smart", car_model: "Fortwo", car_year: 2009 },
-  { id: 8, car_make: "Audi", car_model: "4000CS Quattro", car_year: 1987 },
-  { id: 9, car_make: "Ford", car_model: "Windstar", car_year: 1996 },
-  { id: 10, car_make: "Mercedes-Benz", car_model: "E-Class", car_year: 2000 },
-  { id: 11, car_make: "Infiniti", car_model: "G35", car_year: 2004 },
-  { id: 12, car_make: "Lotus", car_model: "Esprit", car_year: 2004 },
-  { id: 13, car_make: "Chevrolet", car_model: "Cavalier", car_year: 1997 },
-  { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 },
-  { id: 15, car_make: "Dodge", car_model: "Intrepid", car_year: 2000 },
-  { id: 16, car_make: "Mitsubishi", car_model: "Montero Sport", car_year: 2001 },
-  { id: 17, car_make: "Buick", car_model: "Skylark", car_year: 1987 },
-  { id: 18, car_make: "Geo", car_model: "Prizm", car_year: 1995 },
-  { id: 19, car_make: "Oldsmobile", car_model: "Bravada", car_year: 1994 },
-  { id: 20, car_make: "Mazda", car_model: "Familia", car_year: 1985 },
-  { id: 21, car_make: "Chevrolet", car_model: "Express 1500", car_year: 2003 },
-  { id: 22, car_make: "Jeep", car_model: "Wrangler", car_year: 1997 },
-  { id: 23, car_make: "Eagle", car_model: "Talon", car_year: 1992 },
-  { id: 24, car_make: "Toyota", car_model: "MR2", car_year: 2003 },
-  { id: 25, car_make: "BMW", car_model: "525", car_year: 2005 },
-  { id: 26, car_make: "Cadillac", car_model: "Escalade", car_year: 2005 },
-  { id: 27, car_make: "Infiniti", car_model: "Q", car_year: 2000 },
-  { id: 28, car_make: "Suzuki", car_model: "Aerio", car_year: 2005 },
-  { id: 29, car_make: "Mercury", car_model: "Topaz", car_year: 1993 },
-  { id: 30, car_make: "BMW", car_model: "6 Series", car_year: 2010 },
-  { id: 31, car_make: "Pontiac", car_model: "GTO", car_year: 1964 },
-  { id: 32, car_make: "Dodge", car_model: "Ram Van 3500", car_year: 1999 },
-  { id: 33, car_make: "Jeep", car_model: "Wrangler", car_year: 2011 },
-  { id: 34, car_make: "Ford", car_model: "Escort", car_year: 1991 },
-  { id: 35, car_make: "Chrysler", car_model: "300M", car_year: 2000 },
-  { id: 36, car_make: "Volvo", car_model: "XC70", car_year: 2003 },
-  { id: 37, car_make: "Oldsmobile", car_model: "LSS", car_year: 1997 },
-  { id: 38, car_make: "Toyota", car_model: "Camry", car_year: 1992 },
-  { id: 39, car_make: "Ford", car_model: "Econoline E250", car_year: 1998 },
-  { id: 40, car_make: "Lotus", car_model: "Evora", car_year: 2012 },
-  { id: 41, car_make: "Ford", car_model: "Mustang", car_year: 1965 },
-  { id: 42, car_make: "GMC", car_model: "Yukon", car_year: 1996 },
-  { id: 43, car_make: "Mercedes-Benz", car_model: "R-Class", car_year: 2009 },
-  { id: 44, car_make: "Audi", car_model: "Q7", car_year: 2012 },
-  { id: 45, car_make: "Audi", car_model: "TT", car_year: 2008 },
-  { id: 46, car_make: "Oldsmobile", car_model: "Ciera", car_year: 1995 },
-  { id: 47, car_make: "Volkswagen", car_model: "Jetta", car_year: 2007 },
-  { id: 48, car_make: "Dodge", car_model: "Magnum", car_year: 2008 },
-  { id: 49, car_make: "Chrysler", car_model: "Sebring", car_year: 1996 },
-  { id: 50, car_make: "Lincoln", car_model: "Town Car", car_year: 1999 }
-]
-
 // ⭐️ Example Challenge start ⭐️
 
 /**
@@ -110,7 +56,7 @@ function sayGoodbye(name) {
 */
 function temperatureCtoF(celsius) {
   /* code here */
-  return Math.round((celsius*9/5)+32);
+  return Math.round((celsius * 9 / 5) + 32);
 }
 // Test Line console.log(temperatureCtoF(24));
 /**
@@ -135,15 +81,15 @@ function temperatureInF(temp, unit) {
   //If unit = C
   //Tried to use 'Type of'; didn't work
 
-  if ((unit === 'C') || (unit === 'c')){
-return `${Math.round((temp*9/5)+32)}F`;
+  if ((unit === 'C') || (unit === 'c')) {
+    return `${Math.round((temp * 9 / 5) + 32)}F`;
 
-  // else if = 
-  } else if ((unit === 'F') || (unit === 'f')){
-  return `${Math.round(temp)}F`;
+    // else if = 
+  } else if ((unit === 'F') || (unit === 'f')) {
+    return `${Math.round(temp)}F`;
     // else 
-  }else {
-  return `One of more of the values you entered is incorrect`;
+  } else {
+    return `One of more of the values you entered is incorrect`;
   }
 }
 
@@ -166,7 +112,7 @@ return `${Math.round((temp*9/5)+32)}F`;
  * }
 */
 function makePersonObject(id, name, email) {
-// Only return statement needed - Don't overcomplicate things!
+  // Only return statement needed - Don't overcomplicate things!
   return {
     id: id,
     name: name,
@@ -214,10 +160,10 @@ function getName(object) {
 function appleIndex(stringArray) {
   /* code here */
   // FOR LOOP
-  for (let i = 0; i < stringArray.length; i++){
-    if (stringArray[i] == 'apple'){
+  for (let i = 0; i < stringArray.length; i++) {
+    if (stringArray[i] == 'apple') {
       return i;
-    } 
+    }
     // else {
     //   return `Apple is not in this array.`
     // }
@@ -243,14 +189,14 @@ function appleIndex(stringArray) {
 */
 function isItAnApple(stringArray) {
   /* code here */
-//Declare new Array to store return values
+  //Declare new Array to store return values
   returnValueArray = [];
 
   //FOR LOOP
-  for (let i=0; i < stringArray.length; i++){
-    if (stringArray[i] === 'apple'){
+  for (let i = 0; i < stringArray.length; i++) {
+    if (stringArray[i] === 'apple') {
       returnValueArray.push(true);
-    }else{
+    } else {
       returnValueArray.push(false);
     }
   }
@@ -332,7 +278,7 @@ function getCarInfoByIndex(inventory, index) {
 */
 function getLastCarInfo(carArray) {
   /* code here */
-  const lastCarInfo = carArray[carArray.length-1];
+  const lastCarInfo = carArray[carArray.length - 1];
   return `This is a ${lastCarInfo.car_make} ${lastCarInfo.car_model}`;
 }
 
@@ -348,10 +294,10 @@ function getLastCarInfo(carArray) {
 function getModelYears(carsArray) {
   /* code here */
   //declare new Array
-  carYearsArray =[];
+  carYearsArray = [];
   //For Loop
-  for (let i=0; i < carsArray.length; i++) {
-   carYearsArray.push(carsArray[i].car_year)
+  for (let i = 0; i < carsArray.length; i++) {
+    carYearsArray.push(carsArray[i].car_year)
   }
   return carYearsArray;
 }
@@ -396,11 +342,11 @@ function getCarInfoById(carArray, carId) {
 */
 function getOlderCars(carsArray, maxYear) {
   /* code here */
-//Declare New Array
+  //Declare New Array
   const olderCars = [];
   //For Loop
-  for (i = 0; i < carsArray.length; i++){
-    if (carsArray[i].car_year <= maxYear){
+  for (i = 0; i < carsArray.length; i++) {
+    if (carsArray[i].car_year <= maxYear) {
       olderCars.push((carsArray[i]));
     }
   }
@@ -426,7 +372,7 @@ function getGermanCars(carsArray) {
   //declare new array
   const germanCars = [];
   //For Loopoop with If statement
-  for (let i = 0; i < carsArray.length; i++){
+  for (let i = 0; i < carsArray.length; i++) {
     if (carsArray[i].car_make == 'Audi' || carsArray[i].car_make == 'Mercedez-Benz' || carsArray[i].car_make == 'Volkswagen' || carsArray[i].car_make == 'BMW') {
       germanCars.push(carsArray[i]);
     }
@@ -448,9 +394,20 @@ function getGermanCars(carsArray) {
  *         (1) causes the odometer in the object to be increased by the distance,
  *         (2) returns the updated value of the `odometer`.
 */
-function carMaker(/* code here */) {
+function carMaker(odometer) {
   /* code here */
+  const mechanicObject = {
+    odometer: odometer,
+    drive: function (distance) {
+      return (this.odometer + distance);
+    }
+  };
+   //return mechanicObject;
+    return mechanicObject;
 }
+// // test
+// //console.log(carMaker(1001));
+
 
 /// ////// END OF CHALLENGE /////////
 /// ////// END OF CHALLENGE /////////
@@ -468,9 +425,9 @@ if (typeof exports !== 'undefined') {
   if (appleIndex) { module.exports.appleIndex = appleIndex }
 
   if (isItAnApple) { module.exports.isItAnApple = isItAnApple }
-  
 
-  
+
+
   if (carMaker) { module.exports.carMaker = carMaker }
   if (getCarInfoByIndex) { module.exports.getCarInfoByIndex = getCarInfoByIndex }
   if (getLastCarInfo) { module.exports.getLastCarInfo = getLastCarInfo }
@@ -479,5 +436,5 @@ if (typeof exports !== 'undefined') {
   if (getModelYears) { module.exports.getModelYears = getModelYears }
   if (getOlderCars) { module.exports.getOlderCars = getOlderCars }
   if (getGermanCars) { module.exports.getGermanCars = getGermanCars }
- 
+
 }
