@@ -111,9 +111,17 @@ return `${Math.round((temp*9/5)+32)}F`;
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
+function makePersonObject(name, id, email) {
+// Only return statement needed - Don't overcomplicate things!
+  return `{
+    id: ${id},
+    name: ${name},
+    email: ${email},
+  }`;
   /* code here */
 }
+
+console.log(makePersonObject(5, "Leia", "leia@leialei.com"));
 
 /**
  * ### Challenge `getName`
