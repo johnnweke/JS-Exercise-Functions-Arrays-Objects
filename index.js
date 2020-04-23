@@ -163,9 +163,10 @@ function appleIndex(stringArray) {
   for (let i = 0; i < stringArray.length; i++){
     if (stringArray[i] == 'apple'){
       return i;
-    } else {
-      return `Apple is not in this array.`
-    }
+    } 
+    // else {
+    //   return `Apple is not in this array.`
+    // }
   }
 }
 // //TEST
@@ -186,10 +187,23 @@ function appleIndex(stringArray) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
+function isItAnApple(stringArray) {
   /* code here */
-}
+//Declare new Array to store return values
+  returnValueArray = [];
 
+  //FOR LOOP
+  for (let i=0; i < stringArray.length; i++){
+    if (stringArray[i] === 'apple'){
+      returnValueArray.push(true);
+    }else{
+      returnValueArray.push(false);
+    }
+  }
+  return returnValueArray;
+}
+// testArray = [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ];
+// console.log(isItAnApple(testArray));
 
 
 /*
@@ -246,7 +260,10 @@ function get3rdCar(inventory) {
 */
 function getCarInfoByIndex(inventory, index) {
   /* code here */
+  const carInfo = inventory[index];
+  return `This is a ${carInfo.car_make} ${carInfo.car_model}`;
 }
+
 
 /**
  * ### Challenge `getLastCarInfo`
